@@ -120,6 +120,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             
             let fieldsMapping = ["id" : "facebookId", "name" : "name", "email" : "email"]
             
+            
             backendless.userService.loginWithFacebookSDK(token, fieldsMapping: fieldsMapping, response: { (user: BackendlessUser!) in
                 
                 print("Login to FB successfully")
